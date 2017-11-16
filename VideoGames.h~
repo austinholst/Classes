@@ -1,0 +1,16 @@
+//VideoGames.h
+#include <iostream>
+#include "Media.h"
+
+using namespace std;
+
+class VideoGames: public Media {
+ public:
+  VideoGames(char* publisher, int year, int rating, char* title);
+  virtual char* getPublisher();
+  virtual  int getRating();
+  ~VideoGames();
+ private:
+  char* publisher;
+  int rating;
+};

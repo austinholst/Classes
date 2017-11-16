@@ -1,0 +1,42 @@
+//Media.cpp
+#include <iostream>
+#include "Media.h"
+
+using namespace std;
+
+Media::Media(char* newTitle, int newYear) {
+  title  = newTitle;
+  year = newYear;
+}
+
+char* Media::getTitle() {
+  return title;
+}
+
+int Media::getYear() {
+  return year;
+}
+
+char* Media::getPublisher() {
+  return NULL;
+}
+
+int Media::getRating() {
+  return NULL;
+}
+
+int Media::getType() {
+  return type;
+}
+
+char* Media::getArtist() {
+  return NULL;
+}
+
+int Media::getDuration() {
+  return NULL;
+}
+
+char* Media::getDirector() {
+  return NULL;
+}

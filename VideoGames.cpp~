@@ -1,0 +1,26 @@
+//VideoGames.cpp
+#include <iostream>
+#include "VideoGames.h"
+
+using namespace std;
+
+VideoGames::VideoGames(char* newPublisher, int newYear, int newRating, char* newTitle):Media(newTitle, newYear) {
+  publisher = newPublisher;
+  rating = newRating;
+  title = newTitle;
+  year = newYear;
+  //type = 0;
+}
+
+VideoGames::~VideoGames() {
+  delete title;
+  delete publisher;
+}
+
+char* VideoGames::getPublisher() {
+  return publisher;
+}
+
+int VideoGames::getRating() {
+  return rating;
+}

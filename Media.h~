@@ -1,0 +1,22 @@
+#ifndef HEADERGUARD
+#define HEADERGUARD
+
+#include <iostream>
+
+using namespace std;
+
+class Media {
+ public:
+  Media(char* title, int year);
+  char* getTitle();
+  int getYear();
+  int getType();
+  virtual char* getPublisher();
+  virtual int getRating();
+ protected:
+  char* title;
+  int year;
+  int type;
+};
+
+#endif
