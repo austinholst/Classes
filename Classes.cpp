@@ -312,14 +312,14 @@ void erase(vector<Media*> &vect) {
 	  else if((*it)-> getType() == 1) {
 	    find = true;
 	    delete static_cast<Music*>(*it);
-	    vect.erase();
+	    vect.erase(it);
 	    cout << "That media has been terminated" << endl;
 	    break;
 	  }
 	  else {
 	    find = true;
 	    delete static_cast<Movies*>(*it);
-	    vect.erase();
+	    vect.erase(it);
 	    cout << "That media has been terminated" << endl;
 	    break;
 	  }
@@ -334,4 +334,3 @@ void erase(vector<Media*> &vect) {
     }
   }
 }
-
